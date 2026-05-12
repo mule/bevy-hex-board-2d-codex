@@ -1,0 +1,8 @@
+[package]
+name = "bevy-hex-board-2d-codex"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+bevy = "0.18"

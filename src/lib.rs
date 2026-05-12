@@ -1,3 +1,5 @@
+pub mod board;
+
 pub const APP_TITLE: &str = "Bevy Hex Board 2D";
 pub const WINDOW_WIDTH: u32 = 1280;
 pub const WINDOW_HEIGHT: u32 = 720;

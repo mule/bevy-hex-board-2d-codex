@@ -1,7 +1,9 @@
+use bevy::prelude::Component;
+
 pub const DEFAULT_BOARD_RADIUS: i32 = 4;
 const SQRT_3: f32 = 1.732_050_8;
 
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Hash, Ord, PartialOrd)]
+#[derive(Component, Clone, Copy, Debug, Eq, PartialEq, Hash, Ord, PartialOrd)]
 pub struct HexCoord {
     pub q: i32,
     pub r: i32,

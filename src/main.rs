@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 use bevy::window::WindowResolution;
-use bevy_hex_board_2d_codex::{APP_TITLE, default_window_resolution};
+use bevy_hex_board_2d_codex::{APP_TITLE, board_render::BoardPlugin, default_window_resolution};
 
 fn main() {
     let (window_width, window_height) = default_window_resolution();
@@ -15,6 +15,7 @@ fn main() {
             }),
             ..default()
         }))
+        .add_plugins(BoardPlugin)
         .add_systems(Startup, setup_camera)
         .run();
 }

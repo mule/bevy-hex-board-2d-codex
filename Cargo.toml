@@ -6,3 +6,4 @@ license = "MIT"
 
 [dependencies]
 bevy = "0.18"
+clap = { version = "4", features = ["derive"] }
